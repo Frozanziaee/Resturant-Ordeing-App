@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Jimmy's Diner</h1>
+                <p class="header-text">The best burgers and pizzas in town.</p>
+            </header>
+            <section id="container" class="container">
+                
+            </section> 
+            <div >
+                <section class="container" id="order-container">
+                    <div class="order">
+                        <h3 class="your-order">Your Order</h3>
+                    </div>
+
+                    <div class="first orr" id="orders">
+                       
+                    </div>
+
+                    <div class="second orr">
+                        <p class="total">Total price:</p>
+                        <p class="price" id="total-price-el">$0</p>
+                    </div>
+                    <button class="complete-order" id="complete-order">Complete order</button>
+                </section>
+            </div>  
+            <section class="form-section hidden " id="form-section">
+                <h3 class="card-details">Enter your card details</h3>
+                  <div>
+                    <form class="form">
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        <input type="number" name="card-num" id="card-num"  placeholder="Enter card number"  pattern="[0-9]+" required>
+                        <input type="number" name="ccv" id="cvv" placeholder="Enter CCV" pattern="[0-9]+" required>
+                        <input type="text" name="discount"  placeholder="Enter discount code" required >
+                        <button type="submit" class="pay" id="pay">Pay</button>   
+                    </form>
+                  </div>
+            </section>  
+            <p id="thanks"></p>
+        </main>
+        
+                
+    <script src="data.js" type="module"></script>  
+	<script src="script.js" type="module"></script>
+    </body>
+</html>
+
